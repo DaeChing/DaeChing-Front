@@ -92,16 +92,16 @@ struct LogInView: View {
                     }.padding(.bottom, 23)
                     
                     HStack {
-                        Text("계정이 없으신가요?")
+                        Text("이미 회원이신가요?")
                             .font(.pretendard(.medium, size: 12))
                             .foregroundColor(Color.textLight300)
                         
                         NavigationLink(destination: SignInView()){
-                            Text("회원가입")
+                            Text("로그인")
                                 .font(.pretendard(.medium, size: 12))
                                 .foregroundColor(Color.mainPrimary500)
                         } // NavigationLink
-                    }.padding(.bottom, 10)
+                    } .padding(.bottom, 20)
                 }
                 .padding(.horizontal, 19)
                 .navigationBarTitle("", displayMode: .inline)
