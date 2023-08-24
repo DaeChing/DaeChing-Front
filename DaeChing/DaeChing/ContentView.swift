@@ -8,16 +8,59 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isLoading: Bool = true
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = UserDefaults.standard.bool(forKey: "isLoggedIn")
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            if isLoggedIn { // 로그인이 된 상태라면
+                NavigationView {
+                    MainView()
+                }
+            } else { // 로그인이 되지 않은 상태라면
+                VStack (spacing: 0){
+                    LogInView()
+                } .zIndex(0)
+            }
+            
+            if isLoading { // Splash
+                launchScreenView.transition(.opacity).zIndex(1)
+            }
+        } // ZStack
+        .onAppear {
+            autoLogin()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+                withAnimation { isLoading.toggle() }
+            })
+        } // onAppear
+    }
+    
+    func autoLogin() { // 자동 로그인 기능
+        if let userID = UserDefaults.standard.string(forKey: "userID") {
+            if let password = UserDefaults.standard.string(forKey: "password") {
+                
+                sendPostRequestLogIn("url", userID: userID, password: password) {
+                    responseObject, error in guard let _ = responseObject, error == nil else {
+                        print(error ?? "Unknown error")
+                        return
+                    }
+                }
+            }
         }
-        .padding()
+    } // func autoLogin
+}
+
+
+extension ContentView {
+    var launchScreenView: some View {
+        ZStack (alignment: .center){
+            Image("Splash").resizable()
+                .aspectRatio(contentMode: .fill)
+            .edgesIgnoringSafeArea(.all)
+        }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
