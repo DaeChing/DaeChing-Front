@@ -32,6 +32,12 @@
 		3E1781DE2A97988E008D181C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DD2A97988E008D181C /* SignInView.swift */; };
 		3E1781E02A9798A2008D181C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DF2A9798A2008D181C /* MainView.swift */; };
 		3E1781E22A979C8E008D181C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E12A979C8E008D181C /* UserModel.swift */; };
+		3E1781E52A97AE45008D181C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E42A97AE45008D181C /* ChatView.swift */; };
+		3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E72A97AE91008D181C /* PeopleManageView.swift */; };
+		3E1781EA2A97AECC008D181C /* ResearchJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E92A97AECC008D181C /* ResearchJobView.swift */; };
+		3E1781EC2A97B06E008D181C /* SearchArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781EB2A97B06E008D181C /* SearchArea.swift */; };
+		3E1781EE2A97B611008D181C /* CardArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781ED2A97B611008D181C /* CardArea.swift */; };
+		3E1781F02A97B665008D181C /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781EF2A97B665008D181C /* CompanyModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		3E1781DD2A97988E008D181C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		3E1781DF2A9798A2008D181C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3E1781E12A979C8E008D181C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3E1781E42A97AE45008D181C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		3E1781E72A97AE91008D181C /* PeopleManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleManageView.swift; sourceTree = "<group>"; };
+		3E1781E92A97AECC008D181C /* ResearchJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchJobView.swift; sourceTree = "<group>"; };
+		3E1781EB2A97B06E008D181C /* SearchArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArea.swift; sourceTree = "<group>"; };
+		3E1781ED2A97B611008D181C /* CardArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardArea.swift; sourceTree = "<group>"; };
+		3E1781EF2A97B665008D181C /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +135,8 @@
 				3E1781D82A97977B008D181C /* Main */,
 				3E1781D72A97976F008D181C /* LogIn */,
 				3E1781D62A979765008D181C /* SIgnIn */,
+				3E1781E32A97AE38008D181C /* Chat */,
+				3E1781E62A97AE71008D181C /* PeopleManage */,
 				3E1335DF2A9781C400804715 /* CurrentState */,
 				3E1335DD2A97803300804715 /* Certification */,
 				3E1335DC2A977EFF00804715 /* MyPage */,
@@ -210,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				3E1781E12A979C8E008D181C /* UserModel.swift */,
+				3E1781EF2A97B665008D181C /* CompanyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +249,9 @@
 			isa = PBXGroup;
 			children = (
 				3E1781DF2A9798A2008D181C /* MainView.swift */,
+				3E1781E92A97AECC008D181C /* ResearchJobView.swift */,
+				3E1781EB2A97B06E008D181C /* SearchArea.swift */,
+				3E1781ED2A97B611008D181C /* CardArea.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -250,6 +268,22 @@
 			children = (
 			);
 			path = ViewBuilder;
+			sourceTree = "<group>";
+		};
+		3E1781E32A97AE38008D181C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781E42A97AE45008D181C /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		3E1781E62A97AE71008D181C /* PeopleManage */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781E72A97AE91008D181C /* PeopleManageView.swift */,
+			);
+			path = PeopleManage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,12 +372,18 @@
 				3E1335B72A97783E00804715 /* Component.swift in Sources */,
 				3E1335D42A97793500804715 /* FontExtension.swift in Sources */,
 				3E1335A72A976D5400804715 /* DaeChingApp.swift in Sources */,
+				3E1781E52A97AE45008D181C /* ChatView.swift in Sources */,
 				3E1781DE2A97988E008D181C /* SignInView.swift in Sources */,
+				3E1781F02A97B665008D181C /* CompanyModel.swift in Sources */,
 				3E1781E22A979C8E008D181C /* UserModel.swift in Sources */,
+				3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */,
+				3E1781EE2A97B611008D181C /* CardArea.swift in Sources */,
 				3E1335DB2A977B7700804715 /* JSONParsingManager.swift in Sources */,
 				3E1335E52A97831300804715 /* MyPageView.swift in Sources */,
 				3E1781DC2A979834008D181C /* LogInView.swift in Sources */,
 				3E1335E12A97829600804715 /* MyStateView.swift in Sources */,
+				3E1781EA2A97AECC008D181C /* ResearchJobView.swift in Sources */,
+				3E1781EC2A97B06E008D181C /* SearchArea.swift in Sources */,
 				3E1335D62A97797100804715 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,7 @@ struct SignInView: View {
     
     var statusList = ["구인자", "구직자"]
     
+//    @AppStorage("status") var userStatus: Bool = UserDefaults.standard.string(forKey: "status")
     
     @Environment(\.presentationMode) var presentationMode // 현재의 뷰를 제거(뒤로 가기)하기 위한 변수
     

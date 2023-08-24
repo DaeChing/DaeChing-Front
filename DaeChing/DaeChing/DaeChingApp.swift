@@ -11,7 +11,8 @@ import SwiftUI
 struct DaeChingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ResearchJobView()
+            //ContentView()
         }
     }
 }
