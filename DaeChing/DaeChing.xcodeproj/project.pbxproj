@@ -90,7 +90,6 @@
 				3E1335A62A976D5400804715 /* DaeChingApp.swift */,
 				3E1335A82A976D5400804715 /* ContentView.swift */,
 				3E1335BF2A9778D900804715 /* Networking */,
-				3E1335B42A97780C00804715 /* Model */,
 				3E1335B52A97781300804715 /* View */,
 				3E1335BA2A97786600804715 /* Utils */,
 				3E1335AA2A976D5600804715 /* Assets.xcassets */,
@@ -107,41 +106,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3E1335B42A97780C00804715 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		3E1335B52A97781300804715 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				3E1335B62A97783E00804715 /* Component.swift */,
-				3E1335B92A97785C00804715 /* ViewBuilder */,
-				3E1335BE2A9778D000804715 /* SignIn */,
-				3E1335BD2A9778C500804715 /* LogIn */,
-				3E1335B82A97784100804715 /* MainView */,
 				3E1335DF2A9781C400804715 /* CurrentState */,
 				3E1335DD2A97803300804715 /* Certification */,
 				3E1335DC2A977EFF00804715 /* MyPage */,
-				3E1335DE2A97818500804715 /* ManagePeople */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		3E1335B82A97784100804715 /* MainView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainView;
-			sourceTree = "<group>";
-		};
-		3E1335B92A97785C00804715 /* ViewBuilder */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewBuilder;
 			sourceTree = "<group>";
 		};
 		3E1335BA2A97786600804715 /* Utils */ = {
@@ -168,20 +141,6 @@
 				3E1335C02A9778FB00804715 /* Pretendard */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		3E1335BD2A9778C500804715 /* LogIn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LogIn;
-			sourceTree = "<group>";
-		};
-		3E1335BE2A9778D000804715 /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignIn;
 			sourceTree = "<group>";
 		};
 		3E1335BF2A9778D900804715 /* Networking */ = {
@@ -223,13 +182,6 @@
 				3E1335E22A9782EA00804715 /* CertifiationView.swift */,
 			);
 			path = Certification;
-			sourceTree = "<group>";
-		};
-		3E1335DE2A97818500804715 /* ManagePeople */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ManagePeople;
 			sourceTree = "<group>";
 		};
 		3E1335DF2A9781C400804715 /* CurrentState */ = {
