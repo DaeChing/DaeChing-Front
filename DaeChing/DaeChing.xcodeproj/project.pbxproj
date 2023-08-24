@@ -28,6 +28,10 @@
 		3E1335E12A97829600804715 /* MyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E02A97829600804715 /* MyStateView.swift */; };
 		3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E22A9782EA00804715 /* CertifiationView.swift */; };
 		3E1335E52A97831300804715 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E42A97831300804715 /* MyPageView.swift */; };
+		3E1781DC2A979834008D181C /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DB2A979834008D181C /* LogInView.swift */; };
+		3E1781DE2A97988E008D181C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DD2A97988E008D181C /* SignInView.swift */; };
+		3E1781E02A9798A2008D181C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DF2A9798A2008D181C /* MainView.swift */; };
+		3E1781E22A979C8E008D181C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E12A979C8E008D181C /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		3E1335E02A97829600804715 /* MyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateView.swift; sourceTree = "<group>"; };
 		3E1335E22A9782EA00804715 /* CertifiationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertifiationView.swift; sourceTree = "<group>"; };
 		3E1335E42A97831300804715 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		3E1781DB2A979834008D181C /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		3E1781DD2A97988E008D181C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3E1781DF2A9798A2008D181C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3E1781E12A979C8E008D181C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 				3E1335A82A976D5400804715 /* ContentView.swift */,
 				3E1335BF2A9778D900804715 /* Networking */,
 				3E1335B52A97781300804715 /* View */,
+				3E1781D52A979734008D181C /* Model */,
 				3E1335BA2A97786600804715 /* Utils */,
 				3E1335AA2A976D5600804715 /* Assets.xcassets */,
 				3E1335AC2A976D5600804715 /* Preview Content */,
@@ -110,9 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				3E1335B62A97783E00804715 /* Component.swift */,
+				3E1781DA2A9797C2008D181C /* ViewBuilder */,
+				3E1781D82A97977B008D181C /* Main */,
+				3E1781D72A97976F008D181C /* LogIn */,
+				3E1781D62A979765008D181C /* SIgnIn */,
 				3E1335DF2A9781C400804715 /* CurrentState */,
 				3E1335DD2A97803300804715 /* Certification */,
 				3E1335DC2A977EFF00804715 /* MyPage */,
+				3E1781D92A979798008D181C /* ManagePeople */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +204,52 @@
 				3E1335E02A97829600804715 /* MyStateView.swift */,
 			);
 			path = CurrentState;
+			sourceTree = "<group>";
+		};
+		3E1781D52A979734008D181C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781E12A979C8E008D181C /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E1781D62A979765008D181C /* SIgnIn */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781DD2A97988E008D181C /* SignInView.swift */,
+			);
+			path = SIgnIn;
+			sourceTree = "<group>";
+		};
+		3E1781D72A97976F008D181C /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781DB2A979834008D181C /* LogInView.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		3E1781D82A97977B008D181C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781DF2A9798A2008D181C /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3E1781D92A979798008D181C /* ManagePeople */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ManagePeople;
+			sourceTree = "<group>";
+		};
+		3E1781DA2A9797C2008D181C /* ViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,13 +332,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1335D92A977A0C00804715 /* NetworkManager.swift in Sources */,
+				3E1781E02A9798A2008D181C /* MainView.swift in Sources */,
 				3E1335A92A976D5400804715 /* ContentView.swift in Sources */,
 				3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */,
 				3E1335B72A97783E00804715 /* Component.swift in Sources */,
 				3E1335D42A97793500804715 /* FontExtension.swift in Sources */,
 				3E1335A72A976D5400804715 /* DaeChingApp.swift in Sources */,
+				3E1781DE2A97988E008D181C /* SignInView.swift in Sources */,
+				3E1781E22A979C8E008D181C /* UserModel.swift in Sources */,
 				3E1335DB2A977B7700804715 /* JSONParsingManager.swift in Sources */,
 				3E1335E52A97831300804715 /* MyPageView.swift in Sources */,
+				3E1781DC2A979834008D181C /* LogInView.swift in Sources */,
 				3E1335E12A97829600804715 /* MyStateView.swift in Sources */,
 				3E1335D62A97797100804715 /* ColorExtension.swift in Sources */,
 			);
