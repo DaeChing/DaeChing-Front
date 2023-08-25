@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct LogInView: View {
-    @State private var userID: String = ""
+    @State private var loginId: String = ""
     @State private var password: String = ""
     @State private var loginStatus: Bool = false
     
-    
+    @AppStorage("name") var name: String = UserDefaults.standard.string(forKey: "name") ?? "박보경"
+    @AppStorage("role") var role: String = UserDefaults.standard.string(forKey: "role") ?? "구직자"
+
     var body: some View {
         NavigationView{
             if self.loginStatus == true {
@@ -33,7 +35,7 @@ struct LogInView: View {
                                 .foregroundColor(.textLight300)
                                 .frame(width: 25)
                             
-                            TextField("", text: $userID)
+                            TextField("", text: $loginId)
                                 .frame(maxWidth: .infinity)
                                 .frame(height: 36)
                                 .background(Color.clear)
@@ -64,21 +66,42 @@ struct LogInView: View {
                     Spacer()
                     
                     Button(action: {
-                        print(self.userID + self.password)
+                        print(self.loginId + self.password)
                         
-                        let rft = readItemKeyChain(userId: self.userID)
+                        let rft = readItemKeyChain(userId: self.loginId)
                         if rft != nil {
-                            UserDefaults.standard.set(rft, forKey: self.userID)
-                        } else{
-//                            sendPostRequestLogIn("url", userID: userID, password: password) { responseObject, error in guard let _ = responseObject, error == nil else {
-//                                print(error ?? "Unknown error")
-//                                return
-//                            }
-//                                self.loginStatus = true
+                            UserDefaults.standard.set(rft, forKey: self.loginId)
+                        } else {
+//                            sendPostRequestLogIn("\(urlString)login", loginId: loginId, password: password) { responseObject, error in guard let _ = responseObject, error == nil
+//                                else {
+//                                    print(error ?? "Unknown error")
+//                                    return
+//                                }
+//
 //                                // 로그인이 되었을때, 앱에 사용자의 ID, PW를 저장
-//                                UserDefaults.standard.set(self.userID, forKey: "userID")
+//                                self.loginStatus = true
+//                                UserDefaults.standard.set(self.loginId, forKey: "userId")
 //                                UserDefaults.standard.set(self.password, forKey: "password")
+//
+//                                print("loginStatus : \(self.loginStatus)")
 //                            }
+                            sendPostRequest("\(urlString)login", parameters: ["loginId": self.loginId, "password": self.password]){
+                                responseObject, error in guard let _ = responseObject, error == nil else {
+                                    print(error ?? "Unknown error")
+                                    return
+                                }
+                                self.loginStatus = true
+                                // 로그인이 되었을때, 앱에 사용자의 ID, PW를 저장
+                                UserDefaults.standard.set(self.loginId, forKey: "userID")
+                                UserDefaults.standard.set(self.password, forKey: "password")
+                            
+                                //                                            if let rftToken = responseObject {
+                                //                                                let rft = rftToken["refresh"] as? String
+                                //                                                self.userAccessToken = rftToken["access"] as? String ?? ""
+                                //                                                setItemKeyChain(userId: self.userID, rft: rft!)
+                                //                                                UserDefaults.standard.set(rft, forKey: self.userID)
+                                //                                            }
+                            }
                         }
                     }){
                         Text("로그인")
@@ -112,7 +135,8 @@ struct LogInView: View {
     
     
     func readItemKeyChain(userId: String) -> String? {
-        return UserDefaults.standard.string(forKey: userID)
+        return UserDefaults.standard.string(forKey: userId)
+        
     }
 }
 

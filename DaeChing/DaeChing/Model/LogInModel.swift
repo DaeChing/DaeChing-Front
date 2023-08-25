@@ -10,9 +10,6 @@ import SwiftUI
 
 // 로그인 - /login request
 struct LogInModel: Codable {
-    let userId: Int
-    let name: String
-    let role: String
     let loginId: String
     let password: String
 }

@@ -139,7 +139,7 @@ struct SignUpView: View {
             .padding(.bottom, 23)
 
             HStack {
-                Text("계정이 없으신가요?")
+                Text("이미 회원이신가요?")
                     .font(.pretendard(.medium, size: 12))
                     .foregroundColor(Color.textLight300)
                 
@@ -147,7 +147,7 @@ struct SignUpView: View {
                     // action
                     presentationMode.wrappedValue.dismiss() // 현재의 뷰를 제거(뒤로 가기)하기 위한 변수
                 } label: {
-                    Text("회원가입")
+                    Text("로그인")
                         .font(.pretendard(.medium, size: 12))
                         .foregroundColor(Color.mainPrimary500)
                 }
