@@ -41,6 +41,8 @@
 		3E1781F22A97C0AE008D181C /* UploadJobOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */; };
 		3E1781F42A984683008D181C /* ApplyJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F32A984683008D181C /* ApplyJobView.swift */; };
 		3E1781F62A984CB6008D181C /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F52A984CB6008D181C /* JobDetailView.swift */; };
+		3E1781F82A986CEE008D181C /* ResumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F72A986CEE008D181C /* ResumeModel.swift */; };
+		3E1781FA2A986D9A008D181C /* RecruitmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */; };
 		FE44102807D79D1E8175D5C8 /* Pods_DaeChing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadJobOfferView.swift; sourceTree = "<group>"; };
 		3E1781F32A984683008D181C /* ApplyJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyJobView.swift; sourceTree = "<group>"; };
 		3E1781F52A984CB6008D181C /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		3E1781F72A986CEE008D181C /* ResumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeModel.swift; sourceTree = "<group>"; };
+		3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitmentsModel.swift; sourceTree = "<group>"; };
 		A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaeChing.debug.xcconfig"; path = "Target Support Files/Pods-DaeChing/Pods-DaeChing.debug.xcconfig"; sourceTree = "<group>"; };
 		F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaeChing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,7 +108,6 @@
 				A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */,
 				2713F95E6E6CF91F3D45FCB8 /* Pods-DaeChing.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +251,8 @@
 			children = (
 				3E1781E12A979C8E008D181C /* UserModel.swift */,
 				3E1781EF2A97B665008D181C /* CompanyModel.swift */,
+				3E1781F72A986CEE008D181C /* ResumeModel.swift */,
+				3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -459,12 +464,14 @@
 				3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */,
 				3E1781EE2A97B611008D181C /* CardArea.swift in Sources */,
 				3E1335DB2A977B7700804715 /* JSONParsingManager.swift in Sources */,
+				3E1781FA2A986D9A008D181C /* RecruitmentsModel.swift in Sources */,
 				3E1781F62A984CB6008D181C /* JobDetailView.swift in Sources */,
 				3E1335E52A97831300804715 /* MyPageView.swift in Sources */,
 				3E1781DC2A979834008D181C /* LogInView.swift in Sources */,
 				3E1335E12A97829600804715 /* MyStateView.swift in Sources */,
 				3E1781EA2A97AECC008D181C /* ResearchJobView.swift in Sources */,
 				3E1781EC2A97B06E008D181C /* SearchArea.swift in Sources */,
+				3E1781F82A986CEE008D181C /* ResumeModel.swift in Sources */,
 				3E1335D62A97797100804715 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

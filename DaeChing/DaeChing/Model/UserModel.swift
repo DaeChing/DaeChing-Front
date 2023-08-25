@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-// 업로드할 모델(형태) - 로그인
+// MARK: 업로드할 모델(형태)
+// 로그인
 struct UserModel: Codable {
     let userName: String
     let userID: String
