@@ -134,11 +134,11 @@ struct UploadJobOfferView: View {
                 
                 Button {
                     // MARK: 업로드 - 공고 올리기
-                    sendPostJobOffer("url", companyIntroduction: companyIntroduction, mainTasks: mainTasks, qualificationRequirements: qualificationRequirements, preferredQualifications: preferredQualifications, recruitmentProcess: recruitmentProcess, welfare: welfare) { responseObject, error in guard let _ = responseObject, error == nil else {
-                        print(error ?? "Unknown error")
-                        return
-                    }
-                    }
+//                    sendPostJobOffer("url", companyIntroduction: companyIntroduction, mainTasks: mainTasks, qualificationRequirements: qualificationRequirements, preferredQualifications: preferredQualifications, recruitmentProcess: recruitmentProcess, welfare: welfare) { responseObject, error in guard let _ = responseObject, error == nil else {
+//                        print(error ?? "Unknown error")
+//                        return
+//                    }
+//                    }
                     presentationMode.wrappedValue.dismiss() // 현재의 뷰를 제거(뒤로 가기)하기 위한 변수
                     isUpload = true
                 } label: {

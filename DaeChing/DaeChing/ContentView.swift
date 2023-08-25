@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// MARK: 백엔드 서버
+let urlString: String = "https://3db1-14-46-199-32.ngrok-free.app/"
+
 struct ContentView: View {
     @State var isLoading: Bool = true
     @AppStorage("isLoggedIn") var isLoggedIn: Bool = UserDefaults.standard.bool(forKey: "isLoggedIn")
@@ -39,12 +42,12 @@ struct ContentView: View {
         if let userID = UserDefaults.standard.string(forKey: "userID") {
             if let password = UserDefaults.standard.string(forKey: "password") {
                 
-                sendPostRequestLogIn("url", userID: userID, password: password) {
-                    responseObject, error in guard let _ = responseObject, error == nil else {
-                        print(error ?? "Unknown error")
-                        return
-                    }
-                }
+//                sendPostRequestLogIn("url", userID: userID, password: password) {
+//                    responseObject, error in guard let _ = responseObject, error == nil else {
+//                        print(error ?? "Unknown error")
+//                        return
+//                    }
+//                }
             }
         }
     } // func autoLogin

@@ -87,7 +87,7 @@ struct ApplyJobView: View {
             
             Button {
                 // MARK: 나의 지원서를 백엔드에 보내기
-                sendPostApplyJob("url", introduction: introduction, portfolio: portfolio, resume: resume, awards: awards) {
+                sendPostApplyJob("url", userId: 0, introduction: introduction, portfolio: portfolio, resume: resume, awards: awards) {
                     responseObject, error in guard let _ = responseObject, error == nil else {
                         print(error ?? "Unknown error")
                         return

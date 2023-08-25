@@ -70,15 +70,15 @@ struct LogInView: View {
                         if rft != nil {
                             UserDefaults.standard.set(rft, forKey: self.userID)
                         } else{
-                            sendPostRequestLogIn("url", userID: userID, password: password) { responseObject, error in guard let _ = responseObject, error == nil else {
-                                print(error ?? "Unknown error")
-                                return
-                            }
-                                self.loginStatus = true
-                                // 로그인이 되었을때, 앱에 사용자의 ID, PW를 저장
-                                UserDefaults.standard.set(self.userID, forKey: "userID")
-                                UserDefaults.standard.set(self.password, forKey: "password")
-                            }
+//                            sendPostRequestLogIn("url", userID: userID, password: password) { responseObject, error in guard let _ = responseObject, error == nil else {
+//                                print(error ?? "Unknown error")
+//                                return
+//                            }
+//                                self.loginStatus = true
+//                                // 로그인이 되었을때, 앱에 사용자의 ID, PW를 저장
+//                                UserDefaults.standard.set(self.userID, forKey: "userID")
+//                                UserDefaults.standard.set(self.password, forKey: "password")
+//                            }
                         }
                     }){
                         Text("로그인")
@@ -92,12 +92,12 @@ struct LogInView: View {
                     }.padding(.bottom, 23)
                     
                     HStack {
-                        Text("이미 회원이신가요?")
+                        Text("계정이 없으신가요?")
                             .font(.pretendard(.medium, size: 12))
                             .foregroundColor(Color.textLight300)
                         
-                        NavigationLink(destination: SignInView()){
-                            Text("로그인")
+                        NavigationLink(destination: SignUpView()){
+                            Text("회원가입")
                                 .font(.pretendard(.medium, size: 12))
                                 .foregroundColor(Color.mainPrimary500)
                         } // NavigationLink

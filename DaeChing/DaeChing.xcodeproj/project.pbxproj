@@ -29,9 +29,9 @@
 		3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E22A9782EA00804715 /* CertifiationView.swift */; };
 		3E1335E52A97831300804715 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E42A97831300804715 /* MyPageView.swift */; };
 		3E1781DC2A979834008D181C /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DB2A979834008D181C /* LogInView.swift */; };
-		3E1781DE2A97988E008D181C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DD2A97988E008D181C /* SignInView.swift */; };
+		3E1781DE2A97988E008D181C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DD2A97988E008D181C /* SignUpView.swift */; };
 		3E1781E02A9798A2008D181C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DF2A9798A2008D181C /* MainView.swift */; };
-		3E1781E22A979C8E008D181C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E12A979C8E008D181C /* UserModel.swift */; };
+		3E1781E22A979C8E008D181C /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E12A979C8E008D181C /* LogInModel.swift */; };
 		3E1781E52A97AE45008D181C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E42A97AE45008D181C /* ChatView.swift */; };
 		3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E72A97AE91008D181C /* PeopleManageView.swift */; };
 		3E1781EA2A97AECC008D181C /* ResearchJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E92A97AECC008D181C /* ResearchJobView.swift */; };
@@ -43,6 +43,7 @@
 		3E1781F62A984CB6008D181C /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F52A984CB6008D181C /* JobDetailView.swift */; };
 		3E1781F82A986CEE008D181C /* ResumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F72A986CEE008D181C /* ResumeModel.swift */; };
 		3E1781FA2A986D9A008D181C /* RecruitmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */; };
+		3E1781FC2A98826B008D181C /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781FB2A98826B008D181C /* SignUpModel.swift */; };
 		FE44102807D79D1E8175D5C8 /* Pods_DaeChing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,9 +73,9 @@
 		3E1335E22A9782EA00804715 /* CertifiationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertifiationView.swift; sourceTree = "<group>"; };
 		3E1335E42A97831300804715 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		3E1781DB2A979834008D181C /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
-		3E1781DD2A97988E008D181C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3E1781DD2A97988E008D181C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3E1781DF2A9798A2008D181C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		3E1781E12A979C8E008D181C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3E1781E12A979C8E008D181C /* LogInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
 		3E1781E42A97AE45008D181C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		3E1781E72A97AE91008D181C /* PeopleManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleManageView.swift; sourceTree = "<group>"; };
 		3E1781E92A97AECC008D181C /* ResearchJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchJobView.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		3E1781F52A984CB6008D181C /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
 		3E1781F72A986CEE008D181C /* ResumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeModel.swift; sourceTree = "<group>"; };
 		3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitmentsModel.swift; sourceTree = "<group>"; };
+		3E1781FB2A98826B008D181C /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaeChing.debug.xcconfig"; path = "Target Support Files/Pods-DaeChing/Pods-DaeChing.debug.xcconfig"; sourceTree = "<group>"; };
 		F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaeChing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -249,10 +251,11 @@
 		3E1781D52A979734008D181C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3E1781E12A979C8E008D181C /* UserModel.swift */,
-				3E1781EF2A97B665008D181C /* CompanyModel.swift */,
+				3E1781FB2A98826B008D181C /* SignUpModel.swift */,
+				3E1781E12A979C8E008D181C /* LogInModel.swift */,
 				3E1781F72A986CEE008D181C /* ResumeModel.swift */,
 				3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */,
+				3E1781EF2A97B665008D181C /* CompanyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,7 +263,7 @@
 		3E1781D62A979765008D181C /* SIgnIn */ = {
 			isa = PBXGroup;
 			children = (
-				3E1781DD2A97988E008D181C /* SignInView.swift */,
+				3E1781DD2A97988E008D181C /* SignUpView.swift */,
 			);
 			path = SIgnIn;
 			sourceTree = "<group>";
@@ -453,14 +456,15 @@
 				3E1335A92A976D5400804715 /* ContentView.swift in Sources */,
 				3E1781F42A984683008D181C /* ApplyJobView.swift in Sources */,
 				3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */,
+				3E1781FC2A98826B008D181C /* SignUpModel.swift in Sources */,
 				3E1335B72A97783E00804715 /* Component.swift in Sources */,
 				3E1335D42A97793500804715 /* FontExtension.swift in Sources */,
 				3E1335A72A976D5400804715 /* DaeChingApp.swift in Sources */,
 				3E1781E52A97AE45008D181C /* ChatView.swift in Sources */,
-				3E1781DE2A97988E008D181C /* SignInView.swift in Sources */,
+				3E1781DE2A97988E008D181C /* SignUpView.swift in Sources */,
 				3E1781F22A97C0AE008D181C /* UploadJobOfferView.swift in Sources */,
 				3E1781F02A97B665008D181C /* CompanyModel.swift in Sources */,
-				3E1781E22A979C8E008D181C /* UserModel.swift in Sources */,
+				3E1781E22A979C8E008D181C /* LogInModel.swift in Sources */,
 				3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */,
 				3E1781EE2A97B611008D181C /* CardArea.swift in Sources */,
 				3E1335DB2A977B7700804715 /* JSONParsingManager.swift in Sources */,

@@ -7,10 +7,14 @@
 
 import SwiftUI
 
-// 구인자 - Company
+// MARK: GET - 기업 정보 상세 조회
+// 기업의 상세한 정보를 조회 - /companies/{companyId}
+
+// parameters: companyId: Int
 struct CompanyModel: Codable {
-    let companyIntroduction: String
-    let mainTasks: String
+    let companyId: Int
+    let introduction: String
+    let work: String
     let qualificationRequirements: String
     let preferredQualifications: String
     let recruitmentProcess: String
