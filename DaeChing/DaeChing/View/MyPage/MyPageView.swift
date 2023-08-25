@@ -18,6 +18,7 @@ struct MyPageView: View {
             VStack (alignment: .leading){
                 Text("MY")
                     .font(.custom("Pretendard", size: 20).weight(.bold))
+                    .foregroundColor(.textLight400)
                     .padding(20)
                 ForEach(imageName.indices, id: \.self) { index in
                     iconTextView(imageName: imageName[0][index]
@@ -26,12 +27,14 @@ struct MyPageView: View {
                 Text("채용")
                     .padding(20)
                     .font(.custom("Pretendard", size: 20).weight(.bold))
+                    .foregroundColor(.textLight400)
                 ForEach(imageName.indices, id: \.self) { index in
                     iconTextView(imageName: imageName[1][index]
                                  , labelText: labelText[1][index])
                 }
                 Text("활동")
                     .font(.custom("Pretendard", size: 20).weight(.bold))
+                    .foregroundColor(.textLight400)
                     .padding(20)
                 ForEach(imageName.indices, id: \.self) { index in
                     iconTextView(imageName: imageName[2][index]

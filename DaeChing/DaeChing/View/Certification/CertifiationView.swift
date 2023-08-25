@@ -16,15 +16,15 @@ struct CertifiationView: View {
                 HStack {
                     Text("적성률")
                         .font(.custom("Pretendard", size: 12).weight(.semibold))
-                    +
-                    // TODO: 컬러 고치기
+                    
                     Text(" 60%")
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(.mainPrimary500)
                         .font(.custom("Pretendard", size: 12).weight(.semibold))
                     //                    Divider()
                     //                        .frame(height: 16)
                     Rectangle()
                         .frame(width: 0.5,height: 12)
+                        .foregroundColor(.mainPrimary500)
                     Text("내 이력을 인증하고 지원해 보세요")
                         .font(.custom("Pretendard", size: 12).weight(.semibold))
                 }
@@ -42,6 +42,7 @@ struct CertifiationView: View {
                             .font(.custom("Pretendard", size: 20).weight(.bold))
                         Spacer()
                         Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.mainPrimary500)
                     }
                     .padding(.bottom, 10)
                     Text("총 경력")
@@ -81,6 +82,7 @@ struct CertifiationView: View {
                             .font(.custom("Pretendard", size: 20).weight(.bold))
                         Spacer()
                         Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.mainPrimary500)
                     }
                     Text("학교명")
                         .font(.custom("Pretendard", size: 16).weight(.bold))
@@ -109,6 +111,7 @@ struct CertifiationView: View {
                             .font(.custom("Pretendard", size: 20).weight(.bold))
                         Spacer()
                         Image(systemName: "plus.circle.fill")
+                            .foregroundColor(.mainPrimary500)
                     }
                     HStack {
                         Text("대외활동, 봉사활동, 수상내역 등")
@@ -129,7 +132,7 @@ struct CertifiationView: View {
                     BtnComponet(btnColor: Color.gray, btnName: "임시저장", textColor: .black, btnWidth: 162, btnHeight: 52, btnRadius: 12, action: {
                         print("눌렸다")})
                     
-                    BtnComponet(btnColor: Color.blue, btnName: "작성완료", textColor: .white, btnWidth: 162, btnHeight: 52, btnRadius: 12, action: {
+                    BtnComponet(btnColor: Color.mainPrimary500, btnName: "작성완료", textColor: .white, btnWidth: 162, btnHeight: 52, btnRadius: 12, action: {
                         print("또 눌렸다.")
                     })
                     Spacer()

@@ -25,7 +25,7 @@ struct ApplicationsListView: View {
 func TopArea() -> some View {
    VStack(alignment: .leading) {
        HStack {
-           cuteBtn(btnColor: .blue, btnText: "공고 수", textColor: .white, btnnum: "3")
+           cuteBtn(btnColor: Color(hex: 0xA1C8FF), btnText: "공고 수", textColor: .white, btnnum: "3")
            Spacer()
            cuteBtn(btnColor: .gray.opacity(0.1), btnText: "채용 완료", textColor: .gray, btnnum: "0")
        }

@@ -31,7 +31,7 @@ struct MyStateView: View {
  func totalArea() -> some View {
     VStack(alignment: .leading) {
         HStack {
-            cuteBtn(btnColor: .blue, btnText: "지원완료", textColor: .white, btnnum: "1")
+            cuteBtn(btnColor: Color(hex: 0xA1C8FF), btnText: "지원완료", textColor: .white, btnnum: "1")
             Spacer()
             cuteBtn(btnColor: .gray.opacity(0.1), btnText: "전형 진행중", textColor: .gray, btnnum: "0")
             Spacer()
@@ -75,7 +75,7 @@ extension MyStateView {
                             .foregroundColor(.black)
                             .font(.custom("Pretendard", size: 16).weight(.bold))
                         RoundedRectangle(cornerRadius: 5)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.mainPrimary500)
                             .frame(width: 21,height: 16)
                             .overlay {
                                 Text("1")

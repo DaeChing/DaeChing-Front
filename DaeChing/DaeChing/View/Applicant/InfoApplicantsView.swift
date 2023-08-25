@@ -17,16 +17,16 @@ struct InfoApplicantsView: View {
                         ZStack{
                             RoundedRectangle(cornerRadius: 10)
                                 .frame(width: 70, height: 70)
-                                .foregroundColor(.gray)
+                                .foregroundColor(.systemGray2)
                             Image(systemName: "photo")
                                 .resizable()
                                 .frame(width: 31, height: 24)
                         }
                         VStack(alignment: .leading) {
-                            Text ("홍길동")
+                            Text ("홍지표")
                                 .font(.custom("Pretendard", size: 16).weight(.bold))
                                 .padding(.bottom, 10)
-                            Text ("여자. 1998")
+                            Text ("남자. 1999")
                                 .font(.custom("Pretendard", size: 12).weight(.semibold))
                         }
                         .padding(.leading, 20)
@@ -75,7 +75,7 @@ struct InfoApplicantsView: View {
                         VStack(alignment: .leading){
                             ZStack {
                                 RoundedRectangle(cornerRadius: 10)
-                                    .foregroundColor(.blue)
+                                    .foregroundColor(.textColorPrimary)
                                     .frame(width: 40, height: 40)
 
                                 Text("0")
@@ -106,7 +106,7 @@ struct stateBar: View {
                 ZStack {
                     HStack {
                         RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(.blue)
+                            .foregroundColor(.textColorPrimary)
                             .frame(width: 40, height: 40)
                     }
                     Text(stateNum)
@@ -115,7 +115,7 @@ struct stateBar: View {
                 }
                 Rectangle()
                     .frame(width: 35, height: 4)
-                    .foregroundColor(.blue)
+                    .foregroundColor(.textColorPrimary)
             }
 
             Text(stateText)
