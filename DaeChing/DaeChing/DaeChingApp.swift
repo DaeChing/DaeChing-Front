@@ -11,7 +11,12 @@ import SwiftUI
 struct DaeChingApp: App {
     var body: some Scene {
         WindowGroup {
+//            NavigationView{
+//                MainView()
+//                
+//            }
             ContentView()
+           
         }
     }
 }

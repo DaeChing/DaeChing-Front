@@ -28,11 +28,29 @@
 		3E1335E12A97829600804715 /* MyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E02A97829600804715 /* MyStateView.swift */; };
 		3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E22A9782EA00804715 /* CertifiationView.swift */; };
 		3E1335E52A97831300804715 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E42A97831300804715 /* MyPageView.swift */; };
-		B9BE67792A9846AA00B3DB00 /* ApplicationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE67782A9846AA00B3DB00 /* ApplicationListView.swift */; };
-		B9BE677C2A98643500B3DB00 /* InfoApplicantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE677B2A98643500B3DB00 /* InfoApplicantsView.swift */; };
+
+		3E1781DC2A979834008D181C /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DB2A979834008D181C /* LogInView.swift */; };
+		3E1781DE2A97988E008D181C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DD2A97988E008D181C /* SignUpView.swift */; };
+		3E1781E02A9798A2008D181C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DF2A9798A2008D181C /* MainView.swift */; };
+		3E1781E22A979C8E008D181C /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E12A979C8E008D181C /* LogInModel.swift */; };
+		3E1781E52A97AE45008D181C /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E42A97AE45008D181C /* ChatView.swift */; };
+		3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E72A97AE91008D181C /* PeopleManageView.swift */; };
+		3E1781EA2A97AECC008D181C /* ResearchJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781E92A97AECC008D181C /* ResearchJobView.swift */; };
+		3E1781EC2A97B06E008D181C /* SearchArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781EB2A97B06E008D181C /* SearchArea.swift */; };
+		3E1781EE2A97B611008D181C /* CardArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781ED2A97B611008D181C /* CardArea.swift */; };
+		3E1781F02A97B665008D181C /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781EF2A97B665008D181C /* CompanyModel.swift */; };
+		3E1781F22A97C0AE008D181C /* UploadJobOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */; };
+		3E1781F42A984683008D181C /* ApplyJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F32A984683008D181C /* ApplyJobView.swift */; };
+		3E1781F62A984CB6008D181C /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F52A984CB6008D181C /* JobDetailView.swift */; };
+		3E1781F82A986CEE008D181C /* ResumeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F72A986CEE008D181C /* ResumeModel.swift */; };
+		3E1781FA2A986D9A008D181C /* RecruitmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */; };
+		3E1781FC2A98826B008D181C /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781FB2A98826B008D181C /* SignUpModel.swift */; };
+		FE44102807D79D1E8175D5C8 /* Pods_DaeChing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2713F95E6E6CF91F3D45FCB8 /* Pods-DaeChing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaeChing.release.xcconfig"; path = "Target Support Files/Pods-DaeChing/Pods-DaeChing.release.xcconfig"; sourceTree = "<group>"; };
 		3E1335A32A976D5400804715 /* DaeChing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaeChing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E1335A62A976D5400804715 /* DaeChingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaeChingApp.swift; sourceTree = "<group>"; };
 		3E1335A82A976D5400804715 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,8 +74,26 @@
 		3E1335E02A97829600804715 /* MyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateView.swift; sourceTree = "<group>"; };
 		3E1335E22A9782EA00804715 /* CertifiationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertifiationView.swift; sourceTree = "<group>"; };
 		3E1335E42A97831300804715 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
-		B9BE67782A9846AA00B3DB00 /* ApplicationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListView.swift; sourceTree = "<group>"; };
-		B9BE677B2A98643500B3DB00 /* InfoApplicantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoApplicantsView.swift; sourceTree = "<group>"; };
+
+		3E1781DB2A979834008D181C /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		3E1781DD2A97988E008D181C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		3E1781DF2A9798A2008D181C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3E1781E12A979C8E008D181C /* LogInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
+		3E1781E42A97AE45008D181C /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		3E1781E72A97AE91008D181C /* PeopleManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleManageView.swift; sourceTree = "<group>"; };
+		3E1781E92A97AECC008D181C /* ResearchJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchJobView.swift; sourceTree = "<group>"; };
+		3E1781EB2A97B06E008D181C /* SearchArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArea.swift; sourceTree = "<group>"; };
+		3E1781ED2A97B611008D181C /* CardArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardArea.swift; sourceTree = "<group>"; };
+		3E1781EF2A97B665008D181C /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadJobOfferView.swift; sourceTree = "<group>"; };
+		3E1781F32A984683008D181C /* ApplyJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyJobView.swift; sourceTree = "<group>"; };
+		3E1781F52A984CB6008D181C /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		3E1781F72A986CEE008D181C /* ResumeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeModel.swift; sourceTree = "<group>"; };
+		3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitmentsModel.swift; sourceTree = "<group>"; };
+		3E1781FB2A98826B008D181C /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaeChing.debug.xcconfig"; path = "Target Support Files/Pods-DaeChing/Pods-DaeChing.debug.xcconfig"; sourceTree = "<group>"; };
+		F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaeChing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,17 +101,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE44102807D79D1E8175D5C8 /* Pods_DaeChing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		055A24125C0D1CF136228BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */,
+				2713F95E6E6CF91F3D45FCB8 /* Pods-DaeChing.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3E13359A2A976D5400804715 = {
 			isa = PBXGroup;
 			children = (
 				3E1335A52A976D5400804715 /* DaeChing */,
 				3E1335A42A976D5400804715 /* Products */,
+				055A24125C0D1CF136228BE0 /* Pods */,
+				F08BE4B00669EDE3500840D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +143,9 @@
 				3E1335A82A976D5400804715 /* ContentView.swift */,
 				3E1335BF2A9778D900804715 /* Networking */,
 				3E1335B52A97781300804715 /* View */,
-				B9BE677A2A98641400B3DB00 /* InfoApplicants */,
+
+				3E1781D52A979734008D181C /* Model */,
+
 				3E1335BA2A97786600804715 /* Utils */,
 				3E1335AA2A976D5600804715 /* Assets.xcassets */,
 				3E1335AC2A976D5600804715 /* Preview Content */,
@@ -115,10 +165,17 @@
 			isa = PBXGroup;
 			children = (
 				3E1335B62A97783E00804715 /* Component.swift */,
+				3E1781DA2A9797C2008D181C /* ViewBuilder */,
+				3E1781D82A97977B008D181C /* Main */,
+				3E1781D72A97976F008D181C /* LogIn */,
+				3E1781D62A979765008D181C /* SIgnIn */,
+				3E1781E32A97AE38008D181C /* Chat */,
+				3E1781E62A97AE71008D181C /* PeopleManage */,
 				3E1335DF2A9781C400804715 /* CurrentState */,
 				3E1335DD2A97803300804715 /* Certification */,
 				3E1335DC2A977EFF00804715 /* MyPage */,
-				B9BE67772A98465000B3DB00 /* Applicants */,
+				3E1781D92A979798008D181C /* ManagePeople */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,20 +255,85 @@
 			path = CurrentState;
 			sourceTree = "<group>";
 		};
-		B9BE67772A98465000B3DB00 /* Applicants */ = {
+    
+		3E1781D52A979734008D181C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE67782A9846AA00B3DB00 /* ApplicationListView.swift */,
+				3E1781FB2A98826B008D181C /* SignUpModel.swift */,
+				3E1781E12A979C8E008D181C /* LogInModel.swift */,
+				3E1781F72A986CEE008D181C /* ResumeModel.swift */,
+				3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */,
+				3E1781EF2A97B665008D181C /* CompanyModel.swift */,
 			);
-			path = Applicants;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		B9BE677A2A98641400B3DB00 /* InfoApplicants */ = {
+		3E1781D62A979765008D181C /* SIgnIn */ = {
 			isa = PBXGroup;
 			children = (
-				B9BE677B2A98643500B3DB00 /* InfoApplicantsView.swift */,
+				3E1781DD2A97988E008D181C /* SignUpView.swift */,
 			);
-			path = InfoApplicants;
+			path = SIgnIn;
+			sourceTree = "<group>";
+		};
+		3E1781D72A97976F008D181C /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781DB2A979834008D181C /* LogInView.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		3E1781D82A97977B008D181C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781DF2A9798A2008D181C /* MainView.swift */,
+				3E1781E92A97AECC008D181C /* ResearchJobView.swift */,
+				3E1781EB2A97B06E008D181C /* SearchArea.swift */,
+				3E1781ED2A97B611008D181C /* CardArea.swift */,
+				3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */,
+				3E1781F52A984CB6008D181C /* JobDetailView.swift */,
+				3E1781F32A984683008D181C /* ApplyJobView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3E1781D92A979798008D181C /* ManagePeople */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ManagePeople;
+			sourceTree = "<group>";
+		};
+		3E1781DA2A9797C2008D181C /* ViewBuilder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewBuilder;
+			sourceTree = "<group>";
+		};
+		3E1781E32A97AE38008D181C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781E42A97AE45008D181C /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		3E1781E62A97AE71008D181C /* PeopleManage */ = {
+			isa = PBXGroup;
+			children = (
+				3E1781E72A97AE91008D181C /* PeopleManageView.swift */,
+			);
+			path = PeopleManage;
+			sourceTree = "<group>";
+		};
+		F08BE4B00669EDE3500840D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +343,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E1335B12A976D5600804715 /* Build configuration list for PBXNativeTarget "DaeChing" */;
 			buildPhases = (
+				2F53653AB4A60CABEF91D5EA /* [CP] Check Pods Manifest.lock */,
 				3E13359F2A976D5400804715 /* Sources */,
 				3E1335A02A976D5400804715 /* Frameworks */,
 				3E1335A12A976D5400804715 /* Resources */,
+				1750639F502E84717B7CADEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,22 +412,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1750639F502E84717B7CADEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaeChing/Pods-DaeChing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaeChing/Pods-DaeChing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaeChing/Pods-DaeChing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F53653AB4A60CABEF91D5EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaeChing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E13359F2A976D5400804715 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E1335D92A977A0C00804715 /* NetworkManager.swift in Sources */,
-				B9BE677C2A98643500B3DB00 /* InfoApplicantsView.swift in Sources */,
+
+				3E1781E02A9798A2008D181C /* MainView.swift in Sources */,
+
 				3E1335A92A976D5400804715 /* ContentView.swift in Sources */,
+				3E1781F42A984683008D181C /* ApplyJobView.swift in Sources */,
 				3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */,
+				3E1781FC2A98826B008D181C /* SignUpModel.swift in Sources */,
 				3E1335B72A97783E00804715 /* Component.swift in Sources */,
 				3E1335D42A97793500804715 /* FontExtension.swift in Sources */,
 				3E1335A72A976D5400804715 /* DaeChingApp.swift in Sources */,
-				B9BE67792A9846AA00B3DB00 /* ApplicationListView.swift in Sources */,
+				3E1781E52A97AE45008D181C /* ChatView.swift in Sources */,
+				3E1781DE2A97988E008D181C /* SignUpView.swift in Sources */,
+				3E1781F22A97C0AE008D181C /* UploadJobOfferView.swift in Sources */,
+				3E1781F02A97B665008D181C /* CompanyModel.swift in Sources */,
+				3E1781E22A979C8E008D181C /* LogInModel.swift in Sources */,
+				3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */,
+				3E1781EE2A97B611008D181C /* CardArea.swift in Sources */,
 				3E1335DB2A977B7700804715 /* JSONParsingManager.swift in Sources */,
+				3E1781FA2A986D9A008D181C /* RecruitmentsModel.swift in Sources */,
+				3E1781F62A984CB6008D181C /* JobDetailView.swift in Sources */,
 				3E1335E52A97831300804715 /* MyPageView.swift in Sources */,
+				3E1781DC2A979834008D181C /* LogInView.swift in Sources */,
 				3E1335E12A97829600804715 /* MyStateView.swift in Sources */,
+				3E1781EA2A97AECC008D181C /* ResearchJobView.swift in Sources */,
+				3E1781EC2A97B06E008D181C /* SearchArea.swift in Sources */,
+				3E1781F82A986CEE008D181C /* ResumeModel.swift in Sources */,
 				3E1335D62A97797100804715 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +609,7 @@
 		};
 		3E1335B22A976D5600804715 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -457,6 +640,7 @@
 		};
 		3E1335B32A976D5600804715 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2713F95E6E6CF91F3D45FCB8 /* Pods-DaeChing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
