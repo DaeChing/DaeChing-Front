@@ -28,6 +28,7 @@
 		3E1335E12A97829600804715 /* MyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E02A97829600804715 /* MyStateView.swift */; };
 		3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E22A9782EA00804715 /* CertifiationView.swift */; };
 		3E1335E52A97831300804715 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E42A97831300804715 /* MyPageView.swift */; };
+
 		3E1781DC2A979834008D181C /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DB2A979834008D181C /* LogInView.swift */; };
 		3E1781DE2A97988E008D181C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DD2A97988E008D181C /* SignUpView.swift */; };
 		3E1781E02A9798A2008D181C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781DF2A9798A2008D181C /* MainView.swift */; };
@@ -45,6 +46,7 @@
 		3E1781FA2A986D9A008D181C /* RecruitmentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F92A986D9A008D181C /* RecruitmentsModel.swift */; };
 		3E1781FC2A98826B008D181C /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781FB2A98826B008D181C /* SignUpModel.swift */; };
 		FE44102807D79D1E8175D5C8 /* Pods_DaeChing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,7 @@
 		3E1335E02A97829600804715 /* MyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateView.swift; sourceTree = "<group>"; };
 		3E1335E22A9782EA00804715 /* CertifiationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertifiationView.swift; sourceTree = "<group>"; };
 		3E1335E42A97831300804715 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+
 		3E1781DB2A979834008D181C /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		3E1781DD2A97988E008D181C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3E1781DF2A9798A2008D181C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 		3E1781FB2A98826B008D181C /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
 		A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaeChing.debug.xcconfig"; path = "Target Support Files/Pods-DaeChing/Pods-DaeChing.debug.xcconfig"; sourceTree = "<group>"; };
 		F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaeChing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +143,9 @@
 				3E1335A82A976D5400804715 /* ContentView.swift */,
 				3E1335BF2A9778D900804715 /* Networking */,
 				3E1335B52A97781300804715 /* View */,
+
 				3E1781D52A979734008D181C /* Model */,
+
 				3E1335BA2A97786600804715 /* Utils */,
 				3E1335AA2A976D5600804715 /* Assets.xcassets */,
 				3E1335AC2A976D5600804715 /* Preview Content */,
@@ -169,6 +175,7 @@
 				3E1335DD2A97803300804715 /* Certification */,
 				3E1335DC2A977EFF00804715 /* MyPage */,
 				3E1781D92A979798008D181C /* ManagePeople */,
+
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +255,7 @@
 			path = CurrentState;
 			sourceTree = "<group>";
 		};
+    
 		3E1781D52A979734008D181C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,7 +460,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1335D92A977A0C00804715 /* NetworkManager.swift in Sources */,
+
 				3E1781E02A9798A2008D181C /* MainView.swift in Sources */,
+
 				3E1335A92A976D5400804715 /* ContentView.swift in Sources */,
 				3E1781F42A984683008D181C /* ApplyJobView.swift in Sources */,
 				3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */,
@@ -606,7 +616,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DaeChing/Preview Content\"";
-				DEVELOPMENT_TEAM = GZMCL5Q7N2;
+				DEVELOPMENT_TEAM = U65UYKH3S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DaeChing/Info.plist;
@@ -637,7 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DaeChing/Preview Content\"";
-				DEVELOPMENT_TEAM = GZMCL5Q7N2;
+				DEVELOPMENT_TEAM = U65UYKH3S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DaeChing/Info.plist;
