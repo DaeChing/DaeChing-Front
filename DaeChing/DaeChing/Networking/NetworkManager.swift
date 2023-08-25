@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 // MARK: GET 서버에서 데이터 읽어오기
 // 사람들의 게시글 보기
@@ -264,6 +265,15 @@ func sendPostJobOffer(_ url: String, companyIntroduction: String, mainTasks: Str
 
 
 // postMethod()
+
+
+
+// MARK: 지원서 작성
+
+
+
+
+
 
 // MARK: PUT 서버에 현존하는 데이터 업데이트하기
 // 나의 포스트 수정, 다른 사람의 게시글 좋아요 누르기, 나의 정보 수정

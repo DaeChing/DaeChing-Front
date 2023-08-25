@@ -12,6 +12,8 @@ struct ResearchJobView: View {
     
     let jobtypeList: [String] = ["Front", "Backend", "iOS", "Android", "AI"]
     
+    @State private var status = UserDefaults.standard.string(forKey: "status") // 사용자 "구직자" or "구인자"
+    
     var body: some View {
         VStack(spacing: 0){
             SearchBar(text: $searchText)
@@ -39,9 +41,14 @@ struct ResearchJobView: View {
             
             NavigationLink {
                 // destination
-                UploadJobOfferView()
+                if status=="구인자" { // 구인자 -> 공고 올리기
+                    UploadJobOfferView()
+                } else { // 구직자 -> 기업 정보 뷰
+                    JobDetailView()
+                }
+                
             } label: {
-                Text("구인 공고 올리기")
+                Text(status=="구인자" ? "구인 공고 올리기" : "지원하기")
                     .font(.pretendard(.bold, size: 16))
                     .foregroundColor(.white)
                     .padding(.vertical, 15)
