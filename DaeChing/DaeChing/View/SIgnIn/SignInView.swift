@@ -18,8 +18,6 @@ struct SignInView: View {
     
     var statusList = ["구인자", "구직자"]
     
-//    @AppStorage("status") var userStatus: Bool = UserDefaults.standard.string(forKey: "status")
-    
     @Environment(\.presentationMode) var presentationMode // 현재의 뷰를 제거(뒤로 가기)하기 위한 변수
     
     var body: some View {
@@ -128,6 +126,8 @@ struct SignInView: View {
                 // 회원가입이 되었을때, 앱에 사용자의 ID, PW를 저장
                 UserDefaults.standard.set(self.userID, forKey: "userID")
                 UserDefaults.standard.set(self.password, forKey: "password")
+                // 유저의 상태를 Userdefault에 저장해준다 "구인자" or "구직자"
+                UserDefaults.standard.set(status, forKey: "status")
             } label: {
                 Text("회원가입")
                     .font(.pretendard(.bold, size: 16))

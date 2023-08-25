@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// MARK: 구인자일때 -> 공고 올리기
+
 struct UploadJobOfferView: View {
     @State var companyIntroduction: String = "" // 기업소개
     @State var mainTasks: String = "" // 주요업무
