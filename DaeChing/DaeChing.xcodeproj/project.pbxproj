@@ -28,6 +28,8 @@
 		3E1335E12A97829600804715 /* MyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E02A97829600804715 /* MyStateView.swift */; };
 		3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E22A9782EA00804715 /* CertifiationView.swift */; };
 		3E1335E52A97831300804715 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1335E42A97831300804715 /* MyPageView.swift */; };
+		B9BE67792A9846AA00B3DB00 /* ApplicationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE67782A9846AA00B3DB00 /* ApplicationListView.swift */; };
+		B9BE677C2A98643500B3DB00 /* InfoApplicantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BE677B2A98643500B3DB00 /* InfoApplicantsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		3E1335E02A97829600804715 /* MyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateView.swift; sourceTree = "<group>"; };
 		3E1335E22A9782EA00804715 /* CertifiationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertifiationView.swift; sourceTree = "<group>"; };
 		3E1335E42A97831300804715 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		B9BE67782A9846AA00B3DB00 /* ApplicationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListView.swift; sourceTree = "<group>"; };
+		B9BE677B2A98643500B3DB00 /* InfoApplicantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoApplicantsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				3E1335A82A976D5400804715 /* ContentView.swift */,
 				3E1335BF2A9778D900804715 /* Networking */,
 				3E1335B52A97781300804715 /* View */,
+				B9BE677A2A98641400B3DB00 /* InfoApplicants */,
 				3E1335BA2A97786600804715 /* Utils */,
 				3E1335AA2A976D5600804715 /* Assets.xcassets */,
 				3E1335AC2A976D5600804715 /* Preview Content */,
@@ -113,6 +118,7 @@
 				3E1335DF2A9781C400804715 /* CurrentState */,
 				3E1335DD2A97803300804715 /* Certification */,
 				3E1335DC2A977EFF00804715 /* MyPage */,
+				B9BE67772A98465000B3DB00 /* Applicants */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +196,22 @@
 				3E1335E02A97829600804715 /* MyStateView.swift */,
 			);
 			path = CurrentState;
+			sourceTree = "<group>";
+		};
+		B9BE67772A98465000B3DB00 /* Applicants */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE67782A9846AA00B3DB00 /* ApplicationListView.swift */,
+			);
+			path = Applicants;
+			sourceTree = "<group>";
+		};
+		B9BE677A2A98641400B3DB00 /* InfoApplicants */ = {
+			isa = PBXGroup;
+			children = (
+				B9BE677B2A98643500B3DB00 /* InfoApplicantsView.swift */,
+			);
+			path = InfoApplicants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,11 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1335D92A977A0C00804715 /* NetworkManager.swift in Sources */,
+				B9BE677C2A98643500B3DB00 /* InfoApplicantsView.swift in Sources */,
 				3E1335A92A976D5400804715 /* ContentView.swift in Sources */,
 				3E1335E32A9782EA00804715 /* CertifiationView.swift in Sources */,
 				3E1335B72A97783E00804715 /* Component.swift in Sources */,
 				3E1335D42A97793500804715 /* FontExtension.swift in Sources */,
 				3E1335A72A976D5400804715 /* DaeChingApp.swift in Sources */,
+				B9BE67792A9846AA00B3DB00 /* ApplicationListView.swift in Sources */,
 				3E1335DB2A977B7700804715 /* JSONParsingManager.swift in Sources */,
 				3E1335E52A97831300804715 /* MyPageView.swift in Sources */,
 				3E1335E12A97829600804715 /* MyStateView.swift in Sources */,

@@ -40,11 +40,6 @@ struct MyPageView: View {
                 Spacer()
             }.navigationBarTitle("내 정보", displayMode: .inline)
                 .navigationBarItems(trailing: Image(systemName: "bell").padding(.trailing,20))
-                
-            
-               
-            
-                
         }
     }
 }

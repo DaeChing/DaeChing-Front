@@ -28,7 +28,7 @@ struct MyStateView: View {
 
 
 // TODO: 색깔 바꿔여
-private func totalArea() -> some View {
+ func totalArea() -> some View {
     VStack(alignment: .leading) {
         HStack {
             cuteBtn(btnColor: .blue, btnText: "지원완료", textColor: .white, btnnum: "1")
@@ -131,7 +131,7 @@ extension MyStateView {
 }
 
 
-private func cuteBtn(btnColor: Color, btnText: String, textColor: Color,btnnum: String) -> some View {
+func cuteBtn(btnColor: Color, btnText: String, textColor: Color,btnnum: String) -> some View {
     Button {
         print("으악")
     } label: {
