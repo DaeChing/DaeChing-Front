@@ -9,10 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     @State var selectedTab: Int = 0
-//    @AppStorage("status") var status: String = UserDefaults.standard.string(forKey: "status") ?? "구인자"
-    //@AppStorage("status") var status: String = "구인자"
     // MARK: 변수 수정 필요!😢
-    @State var status = "구인자"
+    //    @AppStorage("status") var status: String = UserDefaults.standard.string(forKey: "status") ?? "구인자"
+    
+    
+    @State var status = "구직자"
     
     var body: some View {
         if status == "구인자" {

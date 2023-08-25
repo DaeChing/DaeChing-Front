@@ -8,7 +8,7 @@
 import SwiftUI
 
 // MARK: 백엔드 서버
-let urlString: String = "https://3db1-14-46-199-32.ngrok-free.app/"
+let urlString: String = "http://13.125.91.239:8081/"
 
 struct ContentView: View {
     @State var isLoading: Bool = true
@@ -18,17 +18,20 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-//            if isLoggedIn { // 로그인이 된 상태라면
-//                NavigationView {
-//                    MainView()
-//                }
-//            } else { // 로그인이 되지 않은 상태라면
-//                VStack (spacing: 0){
-//                    LogInView()
-//                } .zIndex(0)
-//            }
+            //            if isLoggedIn { // 로그인이 된 상태라면
+            //                NavigationView {
+            //                    MainView()
+            //                }
+            //            } else { // 로그인이 되지 않은 상태라면
+            //                VStack (spacing: 0){
+            //                    LogInView()
+            //                } .zIndex(0)
+            //            }
             
-            LogInView()
+            //LogInView()
+            NavigationView {
+                MainView()
+            }
             
             if isLoading { // Splash
                 launchScreenView.transition(.opacity).zIndex(1)
@@ -42,17 +45,17 @@ struct ContentView: View {
         } // onAppear
     }
     
-//    func autoLogin() { // 자동 로그인 기능
-//        if let loginId = UserDefaults.standard.string(forKey: "userId") {
-//            if let password = UserDefaults.standard.string(forKey: "password") {
-//                sendPostRequestLogIn("\(urlString)login",userId: 0, name: name, completion: ([String : Any]?, Error?) -> Void, role: role, loginId: loginId, password: password) { responseObject, error in guard let _ = responseObject, error == nil else {
-//                    print(error ?? "Unknown error")
-//                    return
-//                }
-//                }
-//            }
-//        }
-//    } // func autoLogin
+    //    func autoLogin() { // 자동 로그인 기능
+    //        if let loginId = UserDefaults.standard.string(forKey: "userId") {
+    //            if let password = UserDefaults.standard.string(forKey: "password") {
+    //                sendPostRequestLogIn("\(urlString)login",userId: 0, name: name, completion: ([String : Any]?, Error?) -> Void, role: role, loginId: loginId, password: password) { responseObject, error in guard let _ = responseObject, error == nil else {
+    //                    print(error ?? "Unknown error")
+    //                    return
+    //                }
+    //                }
+    //            }
+    //        }
+    //    } // func autoLogin
 }
 
 

@@ -12,8 +12,9 @@ struct ResearchJobView: View {
     
     let jobtypeList: [String] = ["Front", "Backend", "iOS", "Android", "AI"]
     
-    @State private var status = UserDefaults.standard.string(forKey: "status") // 사용자 "구직자" or "구인자"
+//    @State private var status = UserDefaults.standard.string(forKey: "status") // 사용자 "구직자" or "구인자"
     
+    @State var status = "구직자"
     var body: some View {
         VStack(spacing: 0){
             SearchBar(text: $searchText)
