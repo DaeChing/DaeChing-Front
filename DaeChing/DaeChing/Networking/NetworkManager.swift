@@ -111,7 +111,8 @@ func postMethod() {
     }.resume()   // 시작
 }
 
-// 로그인
+
+// MARK: 로그인
 func sendPostRequestLogIn(_ url: String, userID: String, password: String, completion: @escaping ([String: Any]?, Error?) -> Void) {
     guard let targetUrl = URL(string: url) else {
         print("Error: cannot create URL")
