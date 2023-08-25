@@ -148,9 +148,7 @@ struct UploadJobOfferView: View {
                         .padding(.vertical, 15)
                         .frame(maxWidth: .infinity)
                         .background(Color.mainPrimary500.cornerRadius(12))
-                }
-                
-                
+                } // Button
                 
             } // VStack
             .frame(maxWidth: .infinity, alignment: .leading)
