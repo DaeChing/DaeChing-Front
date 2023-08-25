@@ -9,7 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     @State var selectedTab: Int = 0
-    @AppStorage("status") var status: String = UserDefaults.standard.string(forKey: "status") ?? "구인자"
+//    @AppStorage("status") var status: String = UserDefaults.standard.string(forKey: "status") ?? "구인자"
+    //@AppStorage("status") var status: String = "구인자"
+    @State var status = "구인자"
     
     var body: some View {
         if status == "구인자" {
@@ -28,7 +30,7 @@ struct MainView: View {
                     })
                     .tag(1)
                 
-                PeopleManageView()
+                ApplicationsListView()
                     .tabItem({
                         Image(systemName: "list.clipboard")
                         Text("관리")
@@ -45,21 +47,21 @@ struct MainView: View {
                     })
                     .tag(0)
                 
-                ChatView()
+                MyStateView()
                     .tabItem({
                         Image(systemName: "list.bullet.clipboard")
                         Text("기록")
                     })
                     .tag(1)
                 
-                PeopleManageView()
+                CertifiationView()
                     .tabItem({
                         Image(systemName: "checkmark.seal")
                         Text("이력인증")
                     })
                     .tag(2)
                 
-                PeopleManageView()
+                MyPageView()
                     .tabItem({
                         Image(systemName: "person")
                         Text("내 정보")
