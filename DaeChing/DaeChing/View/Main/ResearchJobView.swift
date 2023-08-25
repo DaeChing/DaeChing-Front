@@ -37,9 +37,9 @@ struct ResearchJobView: View {
             CardArea()
             
             
-            
-            Button {
-               
+            NavigationLink {
+                // destination
+                UploadJobOfferView()
             } label: {
                 Text("구인 공고 올리기")
                     .font(.pretendard(.bold, size: 16))
@@ -47,11 +47,9 @@ struct ResearchJobView: View {
                     .padding(.vertical, 15)
                     .frame(maxWidth: .infinity)
                     .background(Color.mainPrimary500.cornerRadius(12))
-            }
-            .padding(.horizontal, 19)
-            .padding(.bottom, 25)
+            } .padding(.horizontal, 19)
+                .padding(.bottom, 25)
 
-            
             Spacer()
         }
         //화면 터치시 키보드 숨김
@@ -63,6 +61,8 @@ struct ResearchJobView: View {
 
 struct ResearchJobView_Previews: PreviewProvider {
     static var previews: some View {
-        ResearchJobView()
+        NavigationView {
+            ResearchJobView()
+        }
     }
 }

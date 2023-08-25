@@ -38,6 +38,7 @@
 		3E1781EC2A97B06E008D181C /* SearchArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781EB2A97B06E008D181C /* SearchArea.swift */; };
 		3E1781EE2A97B611008D181C /* CardArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781ED2A97B611008D181C /* CardArea.swift */; };
 		3E1781F02A97B665008D181C /* CompanyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781EF2A97B665008D181C /* CompanyModel.swift */; };
+		3E1781F22A97C0AE008D181C /* UploadJobOfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		3E1781EB2A97B06E008D181C /* SearchArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchArea.swift; sourceTree = "<group>"; };
 		3E1781ED2A97B611008D181C /* CardArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardArea.swift; sourceTree = "<group>"; };
 		3E1781EF2A97B665008D181C /* CompanyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyModel.swift; sourceTree = "<group>"; };
+		3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadJobOfferView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 				3E1781E92A97AECC008D181C /* ResearchJobView.swift */,
 				3E1781EB2A97B06E008D181C /* SearchArea.swift */,
 				3E1781ED2A97B611008D181C /* CardArea.swift */,
+				3E1781F12A97C0AE008D181C /* UploadJobOfferView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				3E1335A72A976D5400804715 /* DaeChingApp.swift in Sources */,
 				3E1781E52A97AE45008D181C /* ChatView.swift in Sources */,
 				3E1781DE2A97988E008D181C /* SignInView.swift in Sources */,
+				3E1781F22A97C0AE008D181C /* UploadJobOfferView.swift in Sources */,
 				3E1781F02A97B665008D181C /* CompanyModel.swift in Sources */,
 				3E1781E22A979C8E008D181C /* UserModel.swift in Sources */,
 				3E1781E82A97AE91008D181C /* PeopleManageView.swift in Sources */,
