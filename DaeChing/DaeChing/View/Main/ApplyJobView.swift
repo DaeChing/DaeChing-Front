@@ -19,6 +19,7 @@ struct ApplyJobView: View {
     @State var awards: String = ""
     
     @Environment(\.presentationMode) var presentationMode // 현재의 뷰를 제거(뒤로 가기)하기 위한 변수
+    @State var isAlert: Bool = false // Alert를 띄우기 위한 변수
     
     var body: some View {
         
@@ -93,6 +94,8 @@ struct ApplyJobView: View {
                         return
                     }
                 }
+                isAlert = true // alert띄우기
+                
                 presentationMode.wrappedValue.dismiss() // 현재의 뷰를 제거(뒤로 가기)하기 위한 변수
             } label: {
                 Text("지원하기")
@@ -107,6 +110,11 @@ struct ApplyJobView: View {
         .padding(.horizontal, 15)
         .navigationTitle("지원서 작성")
         .navigationBarTitleDisplayMode(.inline)
+        .alert(isPresented: $isAlert) {
+            Alert(title: Text("지원완료!"), message: Text("정상적으로 지원이 완료되었습니다!"), dismissButton: .default(Text("확인"), action: {
+                presentationMode.wrappedValue.dismiss() // 현재의 뷰를 제거(뒤로 가기)하기 위한 변수
+            })) // Alert
+        } // alert
     }
 }
 

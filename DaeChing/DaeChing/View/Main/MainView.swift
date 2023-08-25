@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State var selectedTab: Int = 0
-    @AppStorage("status") var status: String = UserDefaults.standard.string(forKey: "status") ?? "구직자"
+    @AppStorage("status") var status: String = UserDefaults.standard.string(forKey: "status") ?? "구인자"
     
     var body: some View {
         if status == "구인자" {
