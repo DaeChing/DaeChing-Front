@@ -54,24 +54,170 @@ import Alomfire
 
 ### 🗂 Folder Structure
 ```swift
-BurningBuddy
+├── Assets.xcassets
+│   ├── AccentColor.colorset
+│   │   └── Contents.json
+│   ├── AppIcon.appiconset
+│   │   ├── Contents.json
+│   │   └── 앱 로고.png
+│   ├── Color
+│   │   ├── Contents.json
+│   │   ├── Main
+│   │   │   ├── Contents.json
+│   │   │   ├── mainImport500.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── mainPoint500.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── mainPrimary500.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── mainSub1500.colorset
+│   │   │   │   └── Contents.json
+│   │   │   └── mainSub2500.colorset
+│   │   │       └── Contents.json
+│   │   ├── System
+│   │   │   ├── Contents.json
+│   │   │   ├── systemBlack.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── systemGray1.colorset
+│   │   │   │   └── Contents.json
+│   │   │   ├── systemGray2.colorset
+│   │   │   │   └── Contents.json
+│   │   │   └── systemGray3.colorset
+│   │   │       └── Contents.json
+│   │   └── Text
+│   │       ├── Contents.json
+│   │       ├── textColorImport.colorset
+│   │       │   └── Contents.json
+│   │       ├── textColorPrimary.colorset
+│   │       │   └── Contents.json
+│   │       ├── textDark300.colorset
+│   │       │   └── Contents.json
+│   │       ├── textDark400.colorset
+│   │       │   └── Contents.json
+│   │       ├── textDark500.colorset
+│   │       │   └── Contents.json
+│   │       ├── textLight100.colorset
+│   │       │   └── Contents.json
+│   │       ├── textLight200.colorset
+│   │       │   └── Contents.json
+│   │       ├── textLight300.colorset
+│   │       │   └── Contents.json
+│   │       ├── textLight400.colorset
+│   │       │   └── Contents.json
+│   │       └── textLight500.colorset
+│   │           └── Contents.json
+│   ├── Contents.json
+│   └── Image
+│       ├── Contents.json
+│       ├── ImgJootpia.imageset
+│       │   ├── Contents.json
+│       │   └── ImgJootpia.png
+│       ├── JobCard.imageset
+│       │   ├── Contents.json
+│       │   └── JobCard.png
+│       ├── JobCard2.imageset
+│       │   ├── Contents.json
+│       │   └── JobCard2.png
+│       ├── JobCard3.imageset
+│       │   ├── Contents.json
+│       │   └── JobCard3.png
+│       ├── Splash.imageset
+│       │   ├── Contents.json
+│       │   └── Splash.png
+│       ├── alarm.imageset
+│       │   ├── Contents.json
+│       │   └── alarm.png
+│       ├── email.imageset
+│       │   ├── Contents.json
+│       │   └── email.png
+│       ├── follow.imageset
+│       │   ├── Contents.json
+│       │   └── follow.png
+│       ├── handShake.imageset
+│       │   ├── Contents.json
+│       │   └── handShake.png
+│       ├── pencil.imageset
+│       │   ├── Contents.json
+│       │   └── pencil.png
+│       ├── person.imageset
+│       │   ├── Contents.json
+│       │   └── person.png
+│       ├── q&a.imageset
+│       │   ├── Contents.json
+│       │   └── q&a.png
+│       ├── resume.imageset
+│       │   ├── Contents.json
+│       │   └── resume.png
+│       └── save.imageset
+│           ├── Contents.json
+│           └── save.png
+├── ContentView.swift
+├── DaeChingApp.swift
 ├── Info.plist
+├── InfoApplicants
+│   └── InfoApplicantsView.swift
 ├── Model
-│   └── CoreData
-│       ├── Bunny
-│       └── User
-├── Resources
-│   └── Assets
+│   ├── CompanyModel.swift
+│   ├── LogInModel.swift
+│   ├── RecruitmentsModel.swift
+│   ├── ResumeModel.swift
+│   └── SignUpModel.swift
+├── Networking
+│   ├── JSONParsingManager.swift
+│   └── NetworkManager.swift
+├── Preview Content
+│   └── Preview Assets.xcassets
+│       └── Contents.json
+├── Test.swift
 ├── Utils
-│   └── NIUtils
-│       └── MPCUtils
+│   ├── Colors
+│   │   └── ColorExtension.swift
+│   └── Fonts
+│       ├── FontExtension.swift
+│       └── Pretendard
+│           ├── Pretendard-Black.otf
+│           ├── Pretendard-Bold.otf
+│           ├── Pretendard-ExtraBold.otf
+│           ├── Pretendard-ExtraLight.otf
+│           ├── Pretendard-Light.otf
+│           ├── Pretendard-Medium.otf
+│           ├── Pretendard-Regular.otf
+│           ├── Pretendard-SemiBold.otf
+│           └── Pretendard-Thin.otf
 └── View
-    ├── Component
-    ├── LevelUp
+    ├── Applicant
+    │   ├── ApplicantsListView.swift
+    │   └── InfoApplicantsView.swift
+    ├── Applicants
+    │   └── ApplicationListView.swift
+    ├── Certification
+    │   └── CertifiationView.swift
+    ├── Chat
+    │   └── ChatView.swift
+    ├── Component.swift
+    ├── CurrentState
+    │   └── MyStateView.swift
+    ├── LogIn
+    │   └── LogInView.swift
     ├── Main
-    ├── Onboarding
-    ├── Partner
-    └── Workout
+    │   ├── ApplyJobView.swift
+    │   ├── CardArea.swift
+    │   ├── JobDetailView.swift
+    │   ├── MainView.swift
+    │   ├── ResearchJobView.swift
+    │   ├── SearchArea.swift
+    │   └── UploadJobOfferView.swift
+    ├── ManagePeople
+    │   └── ManagePeopleView.swift
+    ├── MyPage
+    │   └── MyPageView.swift
+    ├── PeopleManage
+    │   └── PeopleManageView.swift
+    ├── SIgnIn
+    │   └── SignUpView.swift
+    └── ViewBuilder
+        └── ViewBuilders.swift
+
 ```
 <br>
  
