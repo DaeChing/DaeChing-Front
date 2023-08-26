@@ -33,6 +33,18 @@
 |[박보경](https://github.com/bokoo14)|[홍지표](https://github.com/devMuscle)|[신서연](https://github.com/seoyeon-1206)|[한영균](https://github.com/Hanyeonggyun)|
 <br>
 
+
+ ### 📱 Preview
+|채용1|채용2|채용3|
+|:-:|:-:|:-:|
+|![채용View](https://github.com/DaeChing/DaeChing-Front/assets/97583162/f62fcfde-dfcf-4ced-b6c2-f7a2d2946c2f)|![채용View2](https://github.com/DaeChing/DaeChing-Front/assets/97583162/f524c305-4f02-486f-b093-0fae4fbe56c1)|![채용View2-1](https://github.com/DaeChing/DaeChing-Front/assets/97583162/d719d261-1bbc-4405-ac43-bc24e963e249)|
+|대회현황|지원자목록1|지원자목록2|
+|![대회현황](https://github.com/DaeChing/DaeChing-Front/assets/97583162/c1fe07d4-b38a-4333-953f-2712701f47b6)|![지원자 목록 View](https://github.com/DaeChing/DaeChing-Front/assets/97583162/da78efb6-c8a6-4c7b-9a0a-ffba58f486e4)|![지원자 목록 2](https://github.com/DaeChing/DaeChing-Front/assets/97583162/92aded9b-ee50-4fb1-8ec0-078e6ee1e3e0)|
+|지원서작성|기록|이력인증|
+|![지원서 작성](https://github.com/DaeChing/DaeChing-Front/assets/97583162/c8b71cb3-97b5-41be-832c-37a330a5a162)|![기록View](https://github.com/DaeChing/DaeChing-Front/assets/97583162/f5f4267b-212c-4df6-bb9b-bc3d44a2ab3b)|![인증](https://github.com/DaeChing/DaeChing-Front/assets/97583162/24875cd4-06c4-49d6-b462-60f117513b53)|
+
+
+<br>
 ---
 ### 🛠 Development Environment
 <img width="80" src="https://img.shields.io/badge/IOS-16%2B-silver"> <img width="95" src="https://img.shields.io/badge/Xcode-14.3-blue">
