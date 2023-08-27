@@ -48,6 +48,7 @@
 		3E1782002A98CFD8008D181C /* ViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1781FF2A98CFD8008D181C /* ViewBuilders.swift */; };
 		3E1782032A98D203008D181C /* ApplicantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1782022A98D203008D181C /* ApplicantsListView.swift */; };
 		3E1782052A98D23B008D181C /* InfoApplicantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1782042A98D23B008D181C /* InfoApplicantsView.swift */; };
+		3EB848562A9960CC00644865 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB848552A9960CC00644865 /* Test.swift */; };
 		FE44102807D79D1E8175D5C8 /* Pods_DaeChing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		3E1781FF2A98CFD8008D181C /* ViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilders.swift; sourceTree = "<group>"; };
 		3E1782022A98D203008D181C /* ApplicantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicantsListView.swift; sourceTree = "<group>"; };
 		3E1782042A98D23B008D181C /* InfoApplicantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoApplicantsView.swift; sourceTree = "<group>"; };
+		3EB848552A9960CC00644865 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		A514B2D60AECC76D1CD01143 /* Pods-DaeChing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaeChing.debug.xcconfig"; path = "Target Support Files/Pods-DaeChing/Pods-DaeChing.debug.xcconfig"; sourceTree = "<group>"; };
 		F9FEB4804264CF79F61C2B14 /* Pods_DaeChing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaeChing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 				3E1335BA2A97786600804715 /* Utils */,
 				3E1335AA2A976D5600804715 /* Assets.xcassets */,
 				3E1335AC2A976D5600804715 /* Preview Content */,
+				3EB848552A9960CC00644865 /* Test.swift */,
 			);
 			path = DaeChing;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				3E1781FC2A98826B008D181C /* SignUpModel.swift in Sources */,
 				3E1335B72A97783E00804715 /* Component.swift in Sources */,
 				3E1335D42A97793500804715 /* FontExtension.swift in Sources */,
+				3EB848562A9960CC00644865 /* Test.swift in Sources */,
 				3E1335A72A976D5400804715 /* DaeChingApp.swift in Sources */,
 				3E1781E52A97AE45008D181C /* ChatView.swift in Sources */,
 				3E1781DE2A97988E008D181C /* SignUpView.swift in Sources */,

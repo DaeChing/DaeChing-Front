@@ -13,7 +13,7 @@ struct MainView: View {
     //    @AppStorage("status") var status: String = UserDefaults.standard.string(forKey: "status") ?? "구인자"
     
     
-    @State var status = "구직자"
+    @State var status = "구인자"
     
     var body: some View {
         if status == "구인자" {
