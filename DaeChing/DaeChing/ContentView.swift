@@ -28,11 +28,11 @@ struct ContentView: View {
             //                } .zIndex(0)
             //            }
             
-            //LogInView()
-//            NavigationView {
-//                MainView()
-//            }
-            Test()
+            LogInView()
+            NavigationView {
+                MainView()
+            }
+//            Test()
             
             if isLoading { // Splash
                 launchScreenView.transition(.opacity).zIndex(1)
